@@ -1,9 +1,6 @@
 import { Inter } from '@next/font/google'
-import styles from './page.module.css'
-import PictureBox from '../components/PictureBox'
-import Link from 'next/link'
-
-const inter = Inter({ subsets: ['latin'] })
+import PictureBox from '../src/components/PictureBox'
+import styles from '../src/components/Page.module.css'
 
 export default function Home () {
   return (

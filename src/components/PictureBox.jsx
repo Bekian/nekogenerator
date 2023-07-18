@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image';
-import styles from '../app/page.module.css'
+import styles from './Page.module.css'
 import { useState, useEffect } from 'react';
 
 async function grabImage() {
@@ -17,8 +17,8 @@ export default function PictureBox () {
     {/* we set a base img src because it easily defines the standard image size */}
     {/* we could do this without the string but it makes it easy */}
     const [url, setURL] = useState('https://nekos.best/api/v2/neko/0001.png');
-    const [width, setWidth] = useState(200);
-    const [height, setHeight] = useState(350);
+    const [width, setWidth] = useState(300);
+    const [height, setHeight] = useState(500);
     const [count, incCount] = useState(0);
 
     useEffect(()=> {
